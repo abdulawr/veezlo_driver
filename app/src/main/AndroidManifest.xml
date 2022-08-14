@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.veezlo.veelzodriver">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Driver_Activity.Complete_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Driver_Activity.Signup"
+            android:exported="false" />
+        <activity android:name=".Driver_Activity.Driver_Pre_Registration" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Driver_Activity.Support" />
+        <activity android:name=".Driver_Activity.UploadImagesForUserRequestThroughNotification" />
+        <activity android:name=".Driver_Activity.NotificationForDriver" />
+        <activity
+            android:name=".Driver_Activity.MainCampaignPage"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:supportsPictureInPicture="true" />
+        <activity android:name=".Driver_Activity.UploadCampaignImages" />
+        <activity android:name=".Driver_Activity.ViewCampaignDetails" />
+        <activity android:name=".Driver_Activity.InstallationCenter" />
+        <activity android:name=".Driver_Activity.Dashboard" />
+        <activity android:name=".Driver_Activity.Help" />
+        <activity android:name=".Driver_Activity.Help_Center" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service android:name=".CurrentLocation.GPSLocation" />
+        <service android:name=".BackgroundServices.GetFireBaseID">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".BackgroundServices.getBroadReceiveWhenResponeTimeExpire" />
+
+        <activity android:name=".Driver_Activity.LoginDriver" />
+        <activity android:name=".Driver_Activity.About" />
+        <activity android:name=".Driver_Activity.Push_Notification_Alert" />
+        <activity android:name=".Driver_Activity.ContactUS" />
+        <activity android:name=".Driver_Activity.FAQ" />
+        <activity android:name=".Driver_Activity.Wallet" />
+        <activity
+            android:name=".Driver_Activity.CampaignRequestForDriver"
+            android:noHistory="true" />
+        <activity
+            android:name=".Driver_Activity.DriverHomeScreen"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:label=""
+            android:supportsPictureInPicture="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Driver_Activity.SplashScreen"
+            android:theme="@style/Veezlo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

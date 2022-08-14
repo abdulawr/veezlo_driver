@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".Driver_Activity.LoginDriver">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/first"
+        android:background="@drawable/new_login_screen_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="LOGIN"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:background="#fff"
+        android:layout_below="@+id/first"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="-225dp"
+        app:cardBackgroundColor="#fff"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLength="11"
+                    android:drawableLeft="@drawable/mobile_number"
+                    android:drawablePadding="20dp"
+                    android:background="@drawable/bottom_line"
+                    android:paddingBottom="15dp"
+                    android:inputType="number"
+                    android:hint="Mobile Number (03339230000)"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/pass1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLength="15"
+                    android:drawableLeft="@drawable/password_icon"
+                    android:drawablePadding="20dp"
+                    android:visibility="visible"
+                    android:background="@drawable/bottom_line"
+                    android:paddingBottom="15dp"
+                    android:inputType="textPassword"
+                    android:hint="Enter password"/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Login"
+                    android:id="@+id/register"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="60dp"
+                    android:paddingRight="60dp"
+                    android:drawableLeft="@drawable/ambassador"
+                    android:background="@drawable/button_desing"
+                    android:layout_alignParentBottom="true"/>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+<!--  DRIVER PRE REGISTRATION DISABLE   -->
+<!--    <android.widget.Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:onClick="Pre_Registration"-->
+<!--        android:text="Pre-Registration" />-->
+
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="BecomeAmbassador"
+            android:text="Become ambassador " />
+
+
+</RelativeLayout>

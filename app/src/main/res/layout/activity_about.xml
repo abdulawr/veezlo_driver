@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Driver_Activity.About">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@drawable/forgotpassword_back">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="Close"
+            android:scaleType="fitXY"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="About us"
+            android:gravity="center_vertical"
+            android:paddingLeft="20sp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@drawable/forgotpassword_back"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="-35dp"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="30dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardBackgroundColor="#fff">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="A New Generation Of Data-Driven Advertising Platform"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text"
+                            android:textSize="17sp"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="10dp"
+                            android:text="Veezlo is a location-based dynamic advertising platform that converts cars into moving advertising displays. The platform connects advertisers with ambassadors (drivers) through a mobile app and gives advertisers a perfect opportunity to roll out their Ads on the roads in the target geography to reach the consumers right where they are. \n\n
+With Veezlo, your message can reach thousands of potential consumers in a place where your competitors are quiet and you can give your brand a large spotlight to captivate the audience."/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp"
+                    android:elevation="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardBackgroundColor="#fff">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Veezlo App"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text"
+                            android:textSize="17sp"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="10dp"
+                            android:text="Veezlo puts advertising at your fingertips. Understanding how your advertisement performs should be just as easy. Our platform provides unique in-built features that enable you to take control of your advertising campaigns to expand your brand reach. Veezlo app gives you access to the most relevant campaign data and metrics for analysis and understanding the impact of your campaigns. "/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp"
+                    android:elevation="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardBackgroundColor="#fff">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Privacy Policy"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text"
+                            android:textSize="17sp"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="10dp"
+                            android:text="Veezlo offers instant visibility around the target geography with just the tap of a button. Learning how and why we use your information should be just as simple and instant. Our privacy policy provides the information and guides you about how we collect and use your information. It’s all for good."/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp"
+                    android:elevation="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardBackgroundColor="#fff">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Your data helps us to help you"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text"
+                            android:textSize="17sp"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="10dp"
+                            android:text="Veezlo uses your data to provide you excellent services just with the tap of a button, to maximize the earnings of the ambassadors, and to protect the safety and security of both our customers (advertisers) and ambassadors (Drivers). Your data helps us to help you in getting the eyes of the consumers on your brands. We do not sell, trade or rent your data."/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardBackgroundColor="#fff">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Your data protects you"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text"
+                            android:textSize="17sp"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="10dp"
+                            android:text="Your data helps us to protect you, detect and prevent any or campaign-specific frauds and provide you with transparent billing. Ambassadors’ data enables us to provide the users with safe and fraud-free campaign experience. Customers’ campaign details let us determine and ensure that campaign policies are followed to prevent campaigns posing threats, causing any kind of damage (to any religion, person, gender, ideology, minorities and any specific community) and campaigns which are inappropriate for the public."/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp"
+                    android:elevation="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardBackgroundColor="#fff">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="It’s always your choice"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text"
+                            android:textSize="17sp"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="10dp"
+                            android:text="You can choose when to sign up (and what to sign up for) and when to opt-out (and what to opt-out from and what not). You can modify, change or even delete your account. You can unsubscribe to newsletter and change your browser setting for cookies anytime."/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

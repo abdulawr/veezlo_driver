@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Driver_Activity.MainCampaignPage">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp"
+            android:onClick="MainScreenHelp"
+            android:src="@drawable/mainscreenhelp"
+            android:layout_height="50dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Background"
+            android:textAllCaps="false"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:paddingBottom="8dp"
+            android:id="@+id/gotobackground"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/trailbackground">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your kms"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/youKm"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Campaign kms"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/CampaignKM"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/error_layout"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/error_icon"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You are out of the zone, You are not in the Veezlo define boundary"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fram_layout"
+        android:visibility="gone"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:id="@+id/km_in_picture"
+            android:textSize="30dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_back_picture"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

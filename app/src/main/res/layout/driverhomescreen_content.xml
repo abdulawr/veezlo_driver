@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/driverhomescree_appbarlayout">
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:background="@color/colorPrimaryDark"
+        android:text="Background"
+        android:id="@+id/gotobackground"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="160dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:title=""
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="6dp"
+                    android:id="@+id/setcameratocurrentlocation"
+                    android:src="@drawable/zoomlocation"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="80dp"
+           android:layout_marginLeft="40dp"
+           android:id="@+id/error_layout"
+           android:visibility="gone"
+           android:background="@color/white"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/error_icon"
+               android:layout_gravity="center_vertical"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="You are out of the zone, you are not in the Veezlo defined boundary"
+               android:paddingLeft="5dp"
+               android:gravity="center_vertical"
+               android:textStyle="bold"
+               android:paddingRight="5dp"
+               android:layout_gravity="center_vertical"/>
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:id="@+id/online"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="ONLINE"
+                android:visibility="gone"
+                android:drawablePadding="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#fff"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/startTrail"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:text="Start Trial"
+                android:drawablePadding="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#fff"
+                android:background="#2196F3"
+                android:layout_weight="1"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/trailbackground"
+                android:visibility="visible"
+                android:id="@+id/trailLinearLayout"
+                android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You are in a trial."
+                android:textSize="18dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:paddingLeft="10dp"
+                android:paddingTop="14dp"
+                android:paddingRight="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You will be eligible for campaigns after completing your trial successfully."
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+             <!-- Speed view here -->
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Your Speed"
+                            android:textSize="17sp"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/speed"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:layout_weight="1"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Start Date"
+                            android:textSize="17sp"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="---------"
+                            android:id="@+id/startDate"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:layout_weight="1"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="End Date"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="---------"
+                            android:id="@+id/endDate"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:layout_weight="1"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Status"
+                            android:textSize="17sp"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Trial"
+                            android:id="@+id/status"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:layout_weight="1"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Km"
+                            android:textSize="17sp"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/kmTextview"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:layout_weight="1"/>
+
+                    </TableRow>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/forgotpassword_back"
+                        android:text="Save"
+                        android:id="@+id/resumebutton"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"/>
+
+                </TableLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

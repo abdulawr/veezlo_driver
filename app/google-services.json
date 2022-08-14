@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "628147239437",
+    "firebase_url": "https://veelzo-driver.firebaseio.com",
+    "project_id": "veelzo-driver",
+    "storage_bucket": "veelzo-driver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628147239437:android:e0188c86ebd699267df344",
+        "android_client_info": {
+          "package_name": "com.veezlo.veelzodriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628147239437-7gselcr2j90dsvp7egpeo44aopa244eb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuAgeOr5pJKXFetwoXplFDoI6TLJIhTCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628147239437-7gselcr2j90dsvp7egpeo44aopa244eb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ambassador</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="title_activity_testing">Map</string>
+
+    <string-array name="paymentType">
+        <item>JazzCash</item>
+        <item>EasyPasia</item>
+        <item>CNIC Payments</item>
+        <item>Bank Account (IBAN)</item>
+    </string-array>
+
+</resources>

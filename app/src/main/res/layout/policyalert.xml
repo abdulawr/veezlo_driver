@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingTop="9dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/closedialgo"
+        android:layout_gravity="right"
+        android:src="@drawable/close_icon"
+        android:scaleType="fitXY"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduction"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="At Veezlo, we are driven by the purpose to extend the human potential to see beyond the possibilities and accelerate the business progress to improve the lives of people. Veezlo provides advertisers a perfect opportunity to roll their ads on the vehicles in the Veezlo operated geographies while adding extra income to the pockets of commuters, drivers and anyone who drives the vehicles registered with us. We understand the importance of individuals’ privacy and care about your personal information. Read our privacy policy to understand how your privacy is protected with us.
+
+Veezlo, Inc. and/or its affiliates (collectively “Veezlo”, “we” or “us”) collects information about you when you use our mobile apps, websites, forums, in-office services, call-centers, franchises and any other product/services (collectively, the “Services”) and through any kind of interaction/communication with us or with our services. This privacy policy forms the terms on which the information in any kind of nature, including personal data, either we collect on your consent or you provide to us, will be processed and used by Veezlo, Inc. to provide you seamless services and take every actionable step to safeguard your data and privacy.
+
+Each time you interact with our services and provide us with information, by doing so you are agreeing to our privacy policy and consenting to the practices described herein."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="The terms under this heading do not refer to the terms/conditions of the Veezlo services but the phrases that define the relationship of Veezlo with its stakeholders. The terms “we,” “us,” “our” and “Veezlo” refer to Veezlo, Inc. and “you,” and “your” and “advertiser(s)” refers to you, as a user of the Veezlo. The term “ambassador(s)” refers to commuters, drivers or anyone who registers with Veezlo to drive with. They act as an ambassador to the brands/businesses and represent them in the form they may desire or signed up for."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scope"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="This privacy policy applies to everyone/anyone in the world who use our services (“Users”) as well as drivers, partners, transportation companies, ad agencies, agents, print shops, and commuters who use the Veezlo platform under the agreement (collectively, as “Ambassadors”)."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Information you provide to us"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="We collect information which you provide to us either directly or by using our services. We use the information to deliver better services. Read this policy to learn why we need to use the information. We collect info when you create and modify your account, contact customer support, request on-demand services and communicate to us. The information includes but not limited to the email address, contact number, payment method, financial and credit card information, postal address, profile picture or any info that you might choose to provide or required to provide.
+
+Kindly note that Veezlo doesn’t consciously collect, all the data are the requirements for running the system. We require the age to be at least 18 years to engage with Veezlo. Please keep the information from the children."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Information we collect"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="We collect information through your use of our services. This may include your personal information which can be used to contact you like your phone number, postal address, credit/debit card information, email address, and full name. It also includes demographic information (i.e info you submit, that is not personal information) but not limited to postcode, hometown, IMEI, gender, device info, your OS, GPS info, time zone setting, IP address, age/birth date, and registration history info."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Information from other sources"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="We might receive or collect your information both personal and demographic through other sources. The example is when you choose to link your social media account to your Veezlo account for signing up, or if you login into Veezlo account with a payment provider.
+
+Some of information might come from the APIs we use or other apps/sources that use our APIs. We also receive information about you, if your employer assigns you as a contact point to execute the campaign(s).
+
+In some cases, you might want to use our services as an Ambassador. Your personal data might be combined with some other data to enable you for being an Ambassador."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use of personal data"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="Any data of personal nature that we collect, receive or use is to provide excellent service, maintain the quality of the service and improve consistently with time. Veezlo assures its users that your data is safe and we do not use it for any personal purpose/gain or crime. The use is purely in business nature to gain insights, conduct data analysis, testing, and research, launch new products, analyze and monitor usage and trends.
+
+The primary goal of collecting and using the data is to match ambassadors with advertisers and perform the business activities provided in the shape of services by us. We get your permission before we use anything whether the information about you or your preferences.
+
+When you create an account with Veezlo, we send you welcome, confirmation or verification emails. You might choose to receive the newsletter and you can unsubscribe at any time you want. Remember, you can’t opt out from receiving maintenance announcements, support emails, billing information, transaction information, receipts, campaign details, and your ambassadors’ details. This is crucial to prevent disputes and keep the process transparent. We also send messages on your mobile number such as asking you to rate the support, support messages, pin code, follow-up calls to both ambassadors and advertisers for various purposes, verification code, password reset messages or anything deemed to be important by Veezlo including but limited to coupon codes, tracking links, switch status links and vendor portal details.
+
+The information also enables us to facilitate payments, provide on-demand services, estimate and predict the cost, send receipts, provide support to both Advertiser and Ambassador, develop and ensure the safety and secure the interests of both Advertiser and Ambassador. This also helps in the authentication of the users and sending product updates.
+
+It helps us to run operations and administration, including, to prevent fraudulent activities and abuse of our systems/services. We also continuously work on troubleshooting software bugs and operational problems. Your data helps in all this in one way or other. For example, when your app crashes and you send a report, we just roll up our sleeves to fix it.
+
+However, we send you service or system related announcements whenever there is scheduled or unscheduled maintenance/emergency/crisis situation maintenance.
+
+We also facilitate the communication between you and your ambassador, showing you the estimated time for the launch of the campaign or between you and your contact with your use of specific features, such as referrals, and invites.
+
+Veezlo sends you communications that might be in your interests like coupon codes, product info, news, notification and events of Veezlo, where allowed in accordance to local laws to run a contest or any other promotion entries and updates like:
+
+1. Changes in our services
+2. Changes in Pricing
+3. Personalize the services, including to provide and to suggest features, content, social connections, guides, and policies."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="We take every reasonable step to secure your personal and non-personal information from unauthorized access. We value the trust you have given to us. If your account is password protected, be sure that only you have access to it and authorized employees of Veezlo who need information for analysis and other reasons. Veezlo never proactively reach out to ask you information, including password.
+
+The data is secured in our secured databases. The security standards, commercially industry-wide practices and security steps are used such as SSL, firewall, internal systems protection and encryptions to give you the peace of mind. However, unfortunately, 100% secure transmission of data over the internet is not guaranteed. As a result, Veezlo can’t guarantee 100% security of the data you share or transmit to us, you do this on your own risk. Therefore, Veezlo expressively disclaims any liability that can arise by the individual(s) obtaining your data you submit to us.
+
+Again, we emphasize on sharing your some and/or total information in special cases with local authorities required by law and some information to the advertisers or ambassadors to do business with you. You agree to this when you sign up with us. This is all for the good, nothing for personal benefits. We might use (we don’t sell, rent or trade any data) or asked by research organizations (i.e public, private, research bodies and research journals in some cases shareholders/investors/partners/franchises) to share statistical information, impact analysis and logs data which we may share with them as it’s good to add value to the eco-system, improve the infrastructure and improve the lives of people in general to create a better community."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disclosure Due To Legal Reasons"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="The legal reasons might arise due to which law enforcement authorities request us to disclose your data, access, use or transfer data including personal information. Upon case basis, we cooperate with all authorities and law agencies to comply with the law. This is to:
+
+1. Satisfy any applicable laws, local laws, region-based requirements, regulations, and legal processes.
+2. Defend/Protect Veezlo’s policies, Terms and Conditions, legal position, status and operations including investigation of potential violations thereof.
+3. Protect the security, rights, image and property of Veezlo.
+4. Protect the safety and public interest for any reason.
+5. To detect fraud and prevent any misuse or technical issues.
+6. To avoid/prevent any activity or activities that we consider/think, or pose a threat, risk of being illegal, unethical and legally binding/actionable."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Storage and sharing of personal data"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="You agree that we have the right to store and share your data. The data we store about you as we described in this privacy policy is used to maintain our database and render you the services whenever you demand it. This includes your profile, your campaign history, payment information, email, phone or anything that can help us help you in providing you quick services.
+
+We may share your data for the purpose of delivering the service to you. This includes the following:
+
+1. Your location (can be the city of the campaign or zone or your current location) with your ambassador(s) when you request on-demand services to help ambassador(s) for executing the campaign(s).
+2. The ambassadors’ details shared with advertisers to facilitate the communication and execution of the campaign and include your name, contact, and geo-location, profile photo and vehicle details.
+3. With third parties that you may request to provide you a service through our partnership with them or promotional offering made either by us or them. Third parties can be ad agencies, design agencies, printing agencies and/or anyone we might choose to work with.
+4. With your employer that might appointed you as a point of contact to execute a campaign."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other cases of sharing"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="We may share your personal data with our subsidiaries, franchises and affiliated entities. However, third parties service that we might use to deliver you the complete service might collect your data and we do not have any control over them such as Google. Any information that you share with the third party for using our service or in any instance is not covered by the scope of this privacy policy. We are not responsible for such cases. Please review their privacy policy to better protect yourself."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Third party content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="You might receive or engage with content provided by the third party. The content can be in any form or type such as video, audio, graphics, images, text, flash, AI-based tools and software (collectively, as “content”). This content might be there to help you, for example, if you’re not a designer but need to create a design or test the design ideas, these tools can help you create an ad for you quickly even if you’re not a designer. You agree that you might get some promotional emails and messages from them. If you don’t want to engage with it. Please restrict its use on the app.
+
+Also, please understand that it’s just the facility we provide to our users to make things quicker for them. However, we do not have any influence or control over them. They might collect and use information like your site usage, device info, and cookies. If Veezlo apps, sites or systems redirect you to other third party services, it means we are using their some/total services to give you a better experience but we don’t control them and anything regarding that is beyond our scope of the privacy policy.
+
+We want to keep you safe. So please note when you leave our services and enter to other services, read their privacy policy before you enter or submit your personal information, payment or other information on their websites, services, apps, and platforms."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="We store your content, designs and promotional messages on our system. We also print and paste the content on the vehicles when you request and create the campaign on our app. This can also help Veezlo to compare pre and post campaign designs to prevent the fraud."/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cookies"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="We use cookies that accumulates non-personally identifiable information about the visitors of our site. Which includes your search preferences, number of times you visit and a popup message once in your every visit. These type of info is tied to a specific device or IP address but not necessarily with a specific person.
+
+Cookies are generated by the web server and stored in the users’ device. They are small packets of data that help you in personalizing your experience with our site(s).
+
+If you want to prevent Veezlo to collect your cookies, you can disable it from your browser settings. Beware of the third party use of cookies which Veezlo cannot control and does not cover by privacy statement."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Campaign Specific Statement"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="We care about the community and protecting their interest is vital. Kindly read campaign policies and terms of service to learn about allowed campaign material, content, categories and culturally fit designs. You agree that anything, not allowed and/or beyond the policies; posing threats, causing any kind of damage (to any religion, person, gender, ideology, minorities and any specific community) and inappropriate for the audience might result in termination of the service, account termination and removal of ads from the vehicles. In this case, if traffic police get involved, we may share your data with them as required by the law whereas permissible otherwise we protect and delete your data to keep you safe.
+
+Veezlo believes in creating a community that values respect and tolerance which is important to accelerate the business progress to achieve our purpose."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ambassadors Specific Privacy Statement"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="We collect and use your information to process your registration and provide you with the campaigns. The information is also used as the criteria to avoid the fraud and abuse of our systems.
+
+This information includes your location data to help you receive campaigns in your area. This information is also assessed for business purpose to manage our supply and maintain enough supply in a region to fulfill the demand. This might be used in any other form, nature and scope as per need like market research, zonal analysis and improvements.
+
+It can also include your history of campaigns and personal data for verification purpose (ID, driving license, car registration papers, profile picture, email and contact).
+
+We never want to share your information with third parties but you agree that we have the right to share your information (including personal information) about you and/or service provided where required by law, local authorities or in any special case of dispute or conflicts like accidents, insurance claims (to insurance providers) and/or to our franchises for operation in their respective cities.
+
+We do not protect Veezlo’s safety, property and rights only but we also take steps to protect and secure your data, interests and activity. Veezlo detects and prevent address fraud, technical issues or security threats and/or to prevent or stop activities that pose a threat, risk of being illegal or legally actionable.
+
+Ambassadors agree/expressly consent to our use of location-based service and agree/release Veezlo and its affiliates such as franchises or any stakeholder from any kind of liability, damages caused during using our services, claims or anything related to the use of location-based services."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Referral"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="If you use our referral program to invite your friends and family to use our services. We collect the name, contact and email of your friends and family to send an invitation on your behalf. This information also tracks the record of referral success. We may follow up and send reminders. We can also use (not always) this information for marketing and lead generation purpose. Your name and details will be mentioned in the invitation message. If your friends want to remove their information from the database. Kindly request it by contacting us on contact@veezlo.com and mention in the subject line."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accuracy of the information"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="Veezlo considers everything and uses a detail-oriented approach to avoid inaccuracy of the information. But when you’re submitting information to us, it’s your responsibility to provide and maintain the accuracy of the information. Any dispute regarding this matter will not hold Veezlo responsible. However, Veezlo allows you to modify, correct and change your information anytime. If you’re an advertiser, you can do this from the account setting. If you’re an ambassador, you can visit the local supply office."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Access of information under acts"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="Acts that give you the right to access your information Veezlo has about you, in this case, the information can be accessed according to the act(s). Any access requested will cost you a fee which will cover our cost for providing a detail report of the information. This fee (10$) can vary region to region or prevail in any local currency.
+
+Opting out
+If you choose to close your account, delete your details and no longer wants to be the part of Veezlo’s great community. You can request us to close your account, remove you from the newsletter and any service you’re engaged in with us. We will take care of your preferences and delete everything about you. We do not sell, misuse or leak your data.
+
+"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy Changes Notification"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="17sp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="10dp"
+                android:text="Veezlo is a registered trademark of Veezlo Inc., and it reserves 100% right to update, modify and renew the privacy policy time to time to better protect the rights of Veezlo, its beneficiaries, stakeholders, users, ambassadors and anyone who engages with us in the business. If we make a significant change in the policy or the way we treat your information. The notification will be either sent to emails or announced on the website. Your continued use of the services after the changes/notice constitute your consent to the changes.
+
+Contact us
+If you’ve any query, question or complaint on how Veezlo share or use your data. Please reach out to us on contact@veezlo.com. Please make sure you have read the privacy policy before reaching out to us. We encourage you to take time and learn about it on this page. We have tried to cover all the aspects of the policy in detail.
+
+"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

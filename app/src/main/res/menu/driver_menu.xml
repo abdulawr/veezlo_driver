@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_driver_home_screen">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/c_profile"
+            android:icon="@drawable/prfile_cons"
+            android:title="Complete Profile" />
+
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/notif"
+            android:title="Notification" />
+
+        <item
+            android:id="@+id/wallet"
+            android:icon="@drawable/wallet"
+            android:title="Wallet" />
+
+
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/help"
+            android:title="Help Center" />
+
+        <item
+            android:id="@+id/troubleshoot"
+            android:icon="@drawable/tourbleshoo"
+            android:title="Troubleshoot" />
+
+
+        <item
+            android:id="@+id/signout"
+            android:icon="@drawable/signout"
+            android:title="SignOut" />
+
+
+    </group>
+</menu>

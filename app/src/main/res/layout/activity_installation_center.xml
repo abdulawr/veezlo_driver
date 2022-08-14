@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Driver_Activity.InstallationCenter">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:layout_above="@id/details"
+        android:layout_weight="1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@color/text"
+            android:textSize="17sp"
+            android:id="@+id/address"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance"
+            android:id="@+id/distance"
+            android:textColor="@color/text"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact: "
+            android:id="@+id/contact"
+            android:textColor="@color/text"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/forgotpassword_back"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Reach  Center"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:onClick="Reach_Installation_Center"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/forgotpassword_back"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Try Again"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:id="@+id/tryAgainButton"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
